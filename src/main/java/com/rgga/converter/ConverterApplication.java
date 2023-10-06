@@ -11,8 +11,10 @@ public class ConverterApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ConverterApplication.class.getResource("converter-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
+        String css = String.valueOf(this.getClass().getResource("application.css"));
+        scene.getStylesheets().add(css);
+        stage.setTitle("CoinShift");
         stage.setScene(scene);
         stage.show();
     }
