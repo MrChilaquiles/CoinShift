@@ -1,0 +1,12 @@
+#textAmount{
+    color: #2C6E49;
+    background-color: red;
+    --fxbackground-color: red;
+}
+#SelectCoin{
+    font-size: 100px;
+    --fxbackground-color: red;
+}
+.label{
+    -fx-font-size: 200;
+}
